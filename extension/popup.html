@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Watch Together Sync</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="panel">
+        <div class="eyebrow">Watch Together</div>
+        <h1>Sync HTML5 video with your friend</h1>
+        <p class="lede">Create a room, share the code, and keep playback aligned.</p>
+
+        <label class="field">
+          <span>Backend URL</span>
+          <input id="backendUrl" type="url" placeholder="ws://localhost:3000" />
+        </label>
+
+        <label class="field">
+          <span>Nickname</span>
+          <input id="nickname" type="text" maxlength="32" placeholder="Your name" />
+        </label>
+
+        <div class="row">
+          <button id="createRoom" class="primary" type="button">Create Room</button>
+          <button id="saveSettings" class="secondary" type="button">Save</button>
+        </div>
+
+        <label class="field">
+          <span>Join Room</span>
+          <div class="joinRow">
+            <input id="roomId" type="text" maxlength="6" placeholder="ABC123" />
+            <button id="joinRoom" class="primary" type="button">Join</button>
+          </div>
+        </label>
+
+        <div id="statusCard" class="statusCard">
+          <div id="connectionStatus" class="statusLine"></div>
+          <div id="roomStatus" class="statusLine"></div>
+          <div id="memberStatus" class="statusLine"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  min-width: 360px;
+  background:
+    radial-gradient(circle at top left, rgba(48, 137, 255, 0.18), transparent 35%),
+    linear-gradient(160deg, #09111f, #0f1830 54%, #11172a);
+  font-family: "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  color: #f5f8ff;
+}
+
+.shell {
+  padding: 16px;
+}
+
+.panel {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  padding: 16px;
+  background: rgba(10, 17, 31, 0.82);
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.35);
+}
+
+.eyebrow {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #93d1ff;
+}
+
+h1 {
+  margin: 8px 0 8px;
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+.lede {
+  margin: 0 0 16px;
+  color: rgba(245, 248, 255, 0.74);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.field span {
+  font-size: 12px;
+  color: rgba(245, 248, 255, 0.72);
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 12px 13px;
+  background: rgba(255, 255, 255, 0.07);
+  color: #fff;
+  outline: none;
+}
+
+.row,
+.joinRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.joinRow {
+  grid-template-columns: 1fr auto;
+}
+
+button {
+  border: 0;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary {
+  background: linear-gradient(135deg, #4bc2ff, #2676ff);
+  color: #fff;
+}
+
+.secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.statusCard {
+  margin-top: 16px;
+  border-radius: 14px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.statusLine {
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgba(245, 248, 255, 0.82);
+}
