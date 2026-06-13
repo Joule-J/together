@@ -26,6 +26,26 @@ Backend defaults to `ws://localhost:3000`.
 3. Click `Load unpacked`
 4. Select the `extension` folder
 
+## Deploy Backend To Render
+
+1. In Render, choose `New +` -> `Web Service`.
+2. Connect the `Joule-J/together` GitHub repo.
+3. Render can detect `render.yaml` automatically. If it asks manually, use:
+   - Build Command: `npm install`
+   - Start Command: `npm start`
+   - Health Check Path: `/health`
+4. Deploy the service.
+5. After deploy finishes, copy the service URL, such as `https://together-backend.onrender.com`.
+6. In the extension popup, set `Backend URL` to the matching WebSocket URL:
+   - `wss://together-backend.onrender.com`
+
+Render-specific notes:
+
+- The backend already listens on `PORT`, which Render provides automatically.
+- WebSocket connections are supported on Render web services.
+- This MVP stores rooms and chat in memory, so state resets when the service restarts or redeploys.
+- Free instances can sleep when idle, so the first reconnect may take a bit longer.
+
 ## Manual Test Flow
 
 1. Start the backend.
