@@ -17,7 +17,7 @@ npm install
 npm start
 ```
 
-Backend defaults to `ws://localhost:3000`.
+Extension default backend is `wss://together-4jvr.onrender.com`.
 
 ## Load Extension
 

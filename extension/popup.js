@@ -15,7 +15,7 @@ function send(type, payload) {
 }
 
 function renderState(state) {
-  els.backendUrl.value = state.backendUrl || "ws://localhost:3000";
+  els.backendUrl.value = state.backendUrl || "wss://together-4jvr.onrender.com";
   els.nickname.value = state.nickname || "";
   els.connectionStatus.textContent = `Connection: ${state.connectionStatus}`;
   els.roomStatus.textContent = state.room?.roomId

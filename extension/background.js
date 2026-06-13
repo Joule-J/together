@@ -1,5 +1,5 @@
 const DEFAULT_SETTINGS = {
-  backendUrl: "ws://localhost:3000",
+  backendUrl: "wss://together-4jvr.onrender.com",
   nickname: "",
 };
 
